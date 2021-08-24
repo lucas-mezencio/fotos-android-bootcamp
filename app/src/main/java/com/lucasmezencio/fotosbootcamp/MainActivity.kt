@@ -4,7 +4,6 @@ import android.Manifest
 import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -55,7 +54,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     companion object {
-        private val PERMISSION_CODE = 1000
-        private val IMAGE_PICK_CODE = 1001
+        private const val PERMISSION_CODE = 1000
+        private const val IMAGE_PICK_CODE = 1001
     }
 }
