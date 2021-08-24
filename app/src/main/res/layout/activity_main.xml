@@ -13,8 +13,8 @@
         android:scaleType="centerCrop"
         android:contentDescription="@string/selected_image_description"
         android:src="@drawable/image"
-        android:layout_width="400dp"
-        android:layout_height="400dp" />
+        android:layout_width="370dp"
+        android:layout_height="370dp" />
     <Button
         android:id="@+id/pick_image_button"
         android:layout_width="match_parent"
@@ -23,6 +23,14 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:padding="10dp"
         android:layout_margin="16dp" />
-
+    <Button
+        android:id="@+id/open_camera_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_take_shot_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:padding="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
 
 </LinearLayout>
