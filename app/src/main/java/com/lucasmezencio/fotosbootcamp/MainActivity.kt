@@ -16,14 +16,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         pick_image_button.setOnClickListener {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) ==
-                    PackageManager.PERMISSION_DENIED) {
-                    val permission = arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE)
-                    requestPermissions(permission, PERMISSION_CODE)
-                } else {
-                    pickImageFromGallery()
-                }
+            if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) ==
+                PackageManager.PERMISSION_DENIED) {
+                val permission = arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE)
+                requestPermissions(permission, PERMISSION_CODE)
             } else {
                 pickImageFromGallery()
             }
